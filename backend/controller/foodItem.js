@@ -7,6 +7,7 @@ export const getFoods = async (req,res) => {
     } catch (error) {
         res.status(500).json({message: error.message})
     }
+    
 }
 
 import Category from "../models/footcat.js"
