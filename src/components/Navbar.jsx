@@ -34,7 +34,8 @@ const items = useCart();
       <div className='d-flex'>
       <div class="btn bg-white text-success mx-2" onClick={loadCart} >
         My Cart {''}
-        <Badge pill bg='danger'>{items.length}</Badge>
+        <Badge pill bg='danger' >{items.length} 
+        </Badge>
       </div>
       {cartView ? <Modal onClose={() => setCartView(false)}><Cart></Cart></Modal> : ""}
       </div>
